@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 // './' => sử dụng một dấu chấm là kiếm thư mục cùng cấp
 // '../' => sử dụng hai dấu chấm là kiếm ở thư mục cha
 import { useDispatch, useSelector } from 'react-redux';
