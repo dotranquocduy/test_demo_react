@@ -3,12 +3,13 @@ import './App.scss';
 
 
 import { Button } from 'react-bootstrap';
+import Header from './components/header';
 
 
 const App = () => {
   return (   
     <div className="App">
-      hello duy
+     <Header />
     
     </div>
   );
