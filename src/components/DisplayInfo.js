@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './DisplayInfo.scss';
 import logo from './../logo.svg';
 import EditUserInfo from "./EditUserInfo";
@@ -92,6 +92,19 @@ const DisplayInfo = (props)=>{
      setIsShowIsUser(!isShowIsUser)
         
     }
+
+    useEffect(()=>{
+        setTimeout(() => {
+            document.title ="học it liên tục"
+        }, 3000);
+        console.log(">>>> read use effect")
+        if(listUsers.length === 0){
+            alert("danh sách user đã bị xóa!!")
+        }
+        
+    },[listUsers]) // chạy 1 lần 
+    // trong code có thể tạo ra nhiều useEffect chứ không phải 1
+    //Mỗi useEffect có DI khác nhau
 
     return(
         <>

@@ -14,6 +14,8 @@ import React, { useState } from "react";
 //           {id:2, name:"hello", age:14}
 //         ]
 //       }
+
+//       console.log(">>>>> call me constructor")
 //     }
 
 //     handleAddUser=(userObject)=>{
@@ -38,6 +40,20 @@ import React, { useState } from "react";
 //         listUsers:listUsersNew
 //       })
 //     }
+  
+//     componentDidMount(){ // hàm này chạy đúng 1 lần và không cần tham số đầu vào
+//       console.log("call me project mount")
+//       setTimeout(() => {
+//         document.title ="học it giỏi"
+//       }, 3000);
+//     }  
+
+//     componentDidUpdate(prevProps, prevState, snapshot){ // hàm này chạy nhiều lần nhưng với điều kiện là có sự tương tác cập nhật prop, state, force update trong cây DOM 
+//       // cần tham số đầu vào
+//       console.log("call me project update", this.props, prevProps) // hàm này so sánh giữa 2 propertie mơi và cũ khi thay đổi thông qua tương tác
+//     }
+    
+
 //     handleEditUser=({userObject})=>{
      
 //       // console.log(userId)
@@ -56,6 +72,9 @@ import React, { useState } from "react";
    
 //    //jsx => chuyen doi viết code javascript bên trong code html
 //     render() {
+
+//       console.log(">>> call me render")
+
 //       const arrDisplay =[1,2,3,'dsds'];
 //       const myDisplay = 50;
 //       const ischeckDisplay = true;
