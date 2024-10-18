@@ -29,12 +29,13 @@ const Header = () => {
             <button className="btn-login">Log in</button>
             <button className="btn-signup">Sign up</button>
 
-            <NavDropdown title="setting" id="basic-nav-dropdown">
+            {/* <NavDropdown title="setting" id="basic-nav-dropdown">
               <NavDropdown.Item>Login</NavDropdown.Item>
               <NavDropdown.Item>profile</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item> Log out</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
+         
           </Nav>
         </Navbar.Collapse>
       </Container>

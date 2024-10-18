@@ -1,0 +1,42 @@
+.videoHome {
+  padding: 100px;
+  right: 0;
+  // bottom:0;
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  // width:100vw;
+}
+
+.homepage-container {
+  .Homepage-content {
+    position: relative;
+    width: 50%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .title-1 {
+      font-size: 50px;
+      font-weight: 500;
+    }
+    .title-2 {
+      font-size: 30px;
+    }
+
+    .title-3 {
+      .btn-sign-up {
+        border-radius: 5px;
+        height: 40px;
+        padding: 0 20px;
+        background-color: #522020;
+        color: white;
+
+        &:hover {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+}
